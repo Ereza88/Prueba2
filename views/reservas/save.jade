@@ -30,21 +30,21 @@ html
                   | Volver atrás
     section1
       .container
-        h1 Guardar reserva
+        h1 Crear opinión
   br
   br
   form(method="post", action="#{action}")
     -if(put)
       input(type="hidden", name="_method", value="PUT")
-    label Nombre
+    label Establecimiento
     br
     input(type="text", name="nombre", required="required", value="#{reserva.nombre}")
     br
-    label Apellido
+    label Nomre
     br
     input(type="text", name="apellido", required="required", value="#{reserva.apellido}")
     br
-    label Comensales
+    label Nº Comensales
     br
     input(type="text", name="comensales", required="required", value="#{reserva.comensales}")
     br
