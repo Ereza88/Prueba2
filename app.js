@@ -13,13 +13,19 @@ var mongoose = require('mongoose');
 var reservas = require('./routes/reservas');
 var bodyParser = require('body-parser');
 var multer = require('multer');
-mongoose.connect('mongodb://localhost/primer_base2', function(error){
+var dbUrl = process.env.MONGOHQ_URL
+  || 'mongodb://@127.0.0.1:27017/Prueba2'
+var connection = mongoose.createConnection(dbUrl);
+connection.on('error', console.error.bind(console,
+  'connection error:')); 
+  
+/*mongoose.connect('mongodb://localhost/primer_base2', function(error){
 	if(error){
 		throw error;		
 	}else{
 		console.log('Conectado a MongoDB');
 	}
-});
+});*/
 var ReservaSchema = mongoose.Schema({
 	nombre: {type: String, required: true},
 	apellido: {type: String, required: true},
