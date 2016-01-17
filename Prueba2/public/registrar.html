@@ -1,0 +1,116 @@
+<!doctype html>
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<title>¿Dónde como hoy?</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/estilo.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="shortcut icon" href="imagenes/logo2.png" type="image/x-icon"  />
+	<script src="js/header.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+
+</head>
+<body>
+	<header1>
+
+	<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Menu del día</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      
+       
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index"><span class="glyphicon glyphicon-user"></span>Volver a inicio </a></li>
+        
+       </ul>
+    </div>
+  </div>
+</nav>
+</header1>	
+<div class=container id="Filtro">
+		<div id="slider">
+			<div class="elemento">
+				
+			<p class="gancho">¡Edita el menú del día siguiente o almacena el menú de todo el mes!</p>
+			</div>
+			<div class="elemento">
+				
+				<p class="gancho">¡Modifica los datos del establecimiento!</strong></p>
+			</div>
+			<div class="elemento">
+			
+				<p class="gancho">¡Elige donde comer en<strong> un solo vistazo !</strong></p>
+			</div>
+		</div>
+	</div>
+		<section1>
+		<div class="container">
+  <h2>Reserva</h2>
+
+<form method="post" enctype="multipart/form-data" action="#{action}">
+     <div class="form-group">
+        <label>Nombre</label><br/>
+        <input type="text" class="form-control"  placeholder="Email" required="true" value="#{reserva.nombre}">
+     </div>
+      <div class="form-group">
+        <label>Apellido</label><br/>
+        <input type="text" class="form-control"  placeholder="Email" required="true" value="#{reserva.apellido}">
+     </div>
+     
+	 <div class="form-group">
+        <label>Comensales</label><br/>
+        <input type="text" class="form-control"  placeholder="Email" required="true" value="#{reserva.comensales}">
+     </div>
+    
+       <div class="form-group">
+        <label>Observaciones</label><br/>
+        <input type="text" class="form-control"  placeholder="Email" required="true" value="#{reserva.observaciones}">
+     </div>
+      
+     
+    </div>
+    <br>
+    <div class="form-group">
+        <div class="col-xs-offset-3 col-xs-9">
+            <input   type="submit" class="btn btn-primary" value="Enviar">
+            <input type="reset" class="btn btn-default" value="Limpiar">
+        </div>
+    </div>
+     
+</form>
+</div>
+
+		
+		
+	</section1>
+
+
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js' type='text/javascript'> </script>
+<script type="text/javascript">//<![CDATA[
+		$(function(){
+		    $('#slider div:gt(0)').hide();
+		    setInterval(function(){
+		      $('#slider div:first-child').fadeOut(0)
+		         .next('div').fadeIn(1000)
+		         .end().appendTo('#slider');}, 5000);
+		});
+	//]]></script>
+
+
+
+</body>
+</html>

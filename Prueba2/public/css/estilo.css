@@ -1,0 +1,460 @@
+
+body{
+	font-size: 16px;
+
+	font-family: 'Gochi Hand', cursive;  
+}
+
+header1 {
+ 
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+
+}
+
+#collapse{
+	padding: 0px 0px 0px 0px;
+}
+
+#slider{
+margin: 70px 0px 0px;
+}
+body > section > article > div2{
+	font-size: 26px;
+	margin: 15px 10px 5px ;
+
+}
+
+section{
+	width: 100%;
+	display: inline-block;
+	background: url(../imagenes/bodegon.png);
+	margin: 0px;
+
+}
+body > section > article > button{ /*ver mapa*/
+	margin: 0px 00px 10px 7%;
+	
+	width: 90%;
+	padding: 0px 50px 10px 10px;
+	display: inline-block;
+	
+	border-radius: 7px 7px 17px 17px;
+	
+	font-size: 20px;
+
+
+}
+
+section article.menu{
+	border-width: 4px;
+	border-style: solid;
+	width: 85%;
+	margin: 50px 0px 20px 10%;
+	display: inline-block;
+	position: relative;
+	border-radius: 0px 7px 17px 17px;
+	vertical-align: top;
+	font-size: 1.5em;
+
+}
+section article.menu a.prueba{
+	margin-left: 30px;
+}
+section article.menu figure{
+	margin:0px;
+	padding: 0px;
+	/*position: absolute;*/
+
+	float: left;
+	margin-top: -50px;
+	margin-left: -30px;
+}
+section article.menu figure img{
+	border-radius: 50%;
+	border-width: 5px;
+	border-style: solid;
+	width: 180px;
+	height: 140px;
+}
+section article.menu h2{
+	padding: 0px;
+	text-align: center;
+	/*margin: 15px 20px 0px 165px;*/
+	font-size: 1.2em;
+}
+section article.menu p{
+	margin: 15px 10px 5px 30px;
+	font-size: 0.8em;
+	text-align: justify;
+}
+section article.menu p1{
+	margin: 15px 50px 50px 30px;
+	font-size: 1em;
+	text-align: justify;
+}
+section article.menu div{
+	width: 90%;
+	margin: 30px 5% 10px 5%;
+	border-width: 2px;
+	border-style: solid;
+	position: relative;
+	padding-top: 20px;
+	font-size: 0.9em;
+	border-radius: 15px;
+}
+section article.menu div span{/* etiqueta de menu*/
+	background-color: white;
+	position: absolute;
+	line-height: 20px;
+	top: -15px;
+	left: 10px;
+	padding: 3px 10px;
+	border-radius: 15px;
+	text-decoration: underline;
+}
+section article.menu div ul{/* dentro de menu donde van la lineas*/
+	margin:20px;
+	/*padding: 0px;*/
+	list-style: circle;
+}
+section article.menu div ul li{/* dentro de menu*/
+	/*display: inline-block;*/
+	margin: 5px 3%;
+	width: 86%;
+	font-weight: bolder;
+	vertical-align: middle;
+}
+
+section article.menu span.tipo{/*dinero*/
+	position: absolute;
+	right: -2px;
+	height: 35px;
+	top: -38px;
+	border-width: 2px;
+	border-style: solid;
+	line-height: 30px;
+	padding: 2px 10px;
+	border-radius: 15px 15px 0px 0px;
+	font-weight: bolder;
+	color: #F7F7F7;
+
+}
+
+section article.menu span.tipo1{/*dinero*/
+	
+	right: -2px;
+	height: 30px;
+	top: -38px;
+	border-width: 2px;
+	border-style: solid;
+	line-height: 30px;
+	padding: 2px 10px;
+	
+	font-weight: bolder;
+	color: #F7F7F7;
+
+}
+section article.menu span.tipo2{/*dinero*/
+	/*position: absolute;*/
+	right: 0px;
+	left: 50px;
+	height: 30px;
+	top: -38px;
+	border-width: 2px;
+	border-style: solid;
+	line-height: 30px;
+	padding: 2px 10px;
+	
+	font-weight: bolder;
+	color: #F7F7F7;
+	}
+/*
+******************** COLORES menu barato ************************
+**/
+
+/* COLOR 1 */
+section article.barato,
+section article.barato figure img,
+section article.barato div,
+section article.barato span.tipo{
+	border-color: #082E0B;
+}
+section article.barato span.tipo1{
+	border-color: #082E0B;
+}
+section article.barato span.tipo2{
+	border-color: #082E0B;
+}
+/* COLOR 2 */
+section article.barato h2{
+	color: #154419;
+}
+
+section article.barato span.tipo,
+section article.barato span.tipo1,
+section article.barato div,
+section article.barato span.tipo2,
+section article.barato div span{
+	background-color: #154419;
+}
+/* COLOR 3 */
+section article.barato p{
+	color: #3E7242;
+}
+/* COLOR 4 */
+
+section article.barato{
+	background-color: #C0EE90;
+}
+/* COLOR 5 */
+section article.barato div span,
+section article.barato div ul li{
+	color: #9CD95C;
+}
+
+/*
+******************** COLORES menu medio ************************
+**/
+
+/* COLOR 1 */
+section article.medio,
+section article.medio figure img,
+section article.medio div,
+section article.medio span.tipo{
+	border-color: #2A2D84;
+}
+/* COLOR 2 */
+section article.medio h2{
+	color: #2A2D84;
+}
+
+section article.medio span.tipo,
+section article.medio div,
+section article.medio div span{
+	background-color: #2A2D84;
+}
+/* COLOR 3 */
+section article.medio p{
+	color:#2A2D84;
+}
+/* COLOR 4 */
+
+section article.medio{
+	background-color: #796CAF;
+}
+/* COLOR 5 */
+section article.medio div span,
+section article.medio div ul li{
+	color: #C1BBD8;
+}
+
+
+/*
+******************** COLORES menu caro ************************
+**/
+
+/* COLOR 1 */
+section article.caro,
+section article.caro figure img,
+section article.caro div,
+section article.caro span.tipo{
+	border-color:#C70202;
+}
+/* COLOR 2 */
+section article.caro h2{
+	color: #801D1D;
+}
+
+section article.caro span.tipo,
+section article.caro div,
+section article.caro div span{
+	background-color: #CA2525;
+}
+/* COLOR 3 */
+section article.caro p{
+	color: #801D1D;
+}
+/* COLOR 4 */
+
+section article.caro{
+	background-color: #B96C6C;
+}
+/* COLOR 5 */
+section article.caro div span,
+section article.caro div ul li{
+	color: #DEB6B6;
+}
+
+/*
+******************** Slider ************************
+**/
+div#InicioAncho{
+	position: relative;
+	width: 100%;
+	display: none;
+	border:1px solid transparent;
+}
+
+div#InicioAncho #slider {
+	border-radius: 10px;
+	border: 2px solid #8A0868;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	min-height: 550px;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	width: 95%;
+}
+div#InicioAncho #slider div.elemento {
+	left:0;
+	position:absolute;
+	top:0;
+	width: 100%;
+}
+div#InicioAncho #slider img {
+	border:0;
+	margin:0;
+	padding:0;
+	width: 100%;
+}
+div#InicioAncho #slider a{
+	text-decoration: none;
+}
+div#InicioAncho #slider p.gancho {
+	color: #DF7401;
+	display: block;
+	font-size: 1.4em;
+	font-weight: bolder;
+	line-height: 25px;
+	position: absolute;
+	right: 1%;
+	text-shadow: 2px 2px 3px white, -2px -2px 3px white;
+	top: 5%;
+	width: 29%;
+}
+
+/*
+******************** Noticia ************************
+**/
+section div.news{
+	float: right;
+	margin-top: 50px;
+	width: 30%;
+	background-color: white;
+	border:1px solid black;
+	margin-right: 20px;
+	display: none;
+	border-radius: 10px;
+	padding-bottom: 20px;
+}
+
+section div.news h2{
+	text-align: center;
+
+}
+
+section div.news article.post{
+	width: 95%;
+	margin-left: 2%;
+	border-top: 2px solid #440A4E;
+	margin-top: 35px;
+}
+section div.news article.post figure{
+	float: left;
+	margin-top: 10px;
+}
+section div.news article.post figure img{
+	width: 70px;
+}
+section div.news article.post h3{
+	margin-left: 85px;
+}
+section div.news article.post p{
+	font-style: italic;
+	font-size: 0.8em;
+	text-align: justify;
+	margin: 5px 5% 20px 5%;
+}
+section div.news article.post video{
+	width: 90%;
+	margin: 0px 5%;
+}
+
+/*
+******************** first mobile ************************
+**/
+
+@media screen and (min-width: 480px){
+	header nav ul li{
+		width: 22%;
+		text-align: center;
+	}
+	
+}
+@media screen and (min-width: 767px){
+	header nav ul li{
+		width: 8%;
+		margin: 10px 0px 0px 0px;
+		text-align: center;
+	}
+	
+
+	section article.menu{
+		width: 40%;
+		margin: 50px 3% 20px 6%;
+	}
+
+	div#InicioAncho{
+		display: inline;
+	}
+}
+@media screen and (min-width: 950px){
+	
+	section article.menu{
+		width: 26%;
+		margin: 50px 1% 20px 5%;
+	}
+	section div.news{
+		display: inline;
+	}
+
+}
+/*
+******************** las estrellas ************************
+**/
+.ec-stars-wrapper {
+	/* Espacio entre los inline-block (los hijos, los `a`) 
+	   http://ksesocss.blogspot.com/2012/03/display-inline-block-y-sus-empeno-en.html */
+	font-size: 0;
+	/* Podríamos quitarlo, 
+		pero de esta manera (siempre que no le demos padding), 
+		sólo aplicará la regla .ec-stars-wrapper:hover a cuando
+		también se esté haciendo hover a alguna estrella */
+	display: inline-block;
+}
+.ec-stars-wrapper a {
+	text-decoration: none;
+	display: inline-block;
+	/* Volver a dar tamaño al texto */
+	font-size: 35px;
+	color: #888;
+	
+	
+	text-align: justify;
+	;
+	
+}
+
+.ec-stars-wrapper:hover a {
+	color: rgb(255, 255, 0);
+}
+/*
+ * El selector de hijo, es necesario para aumentar la especifidad
+ */
+.ec-stars-wrapper > a:hover ~ a {
+	color: #888;
+}

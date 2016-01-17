@@ -1,0 +1,377 @@
+<!doctype html>
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<title>¿Dónde como hoy?</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/estilo.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="shortcut icon" href="imagenes/logo2.png" type="image/x-icon"  />
+	<script src="js/header.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+
+</head>
+<body>
+<header1>
+
+	<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Menu del día</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Bilbao <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Deusto</a></li>
+            <li><a href="#">Basurto</a></li>
+            <li><a href="#">Indautxu</a></li>
+            <li><a href="#">Casco viejo</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ordenar <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Por precio</a></li>
+            <li><a href="#">Por calificacion</a></li>
+            <li><a href="#">Por proximidad</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Filtrar <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Precio < 10€</a></li>
+            <li><a href="#">Precio 10€-20€</a></li>
+            <li><a href="#">Precio > 20€</a></li>
+            <li><a href="#">Especial celíacos</a></li>
+          </ul>
+        </li>
+       
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="registrar"><span class="glyphicon glyphicon-user"></span>Registrarse </a></li>
+        <li><a href="/api/entries"><span class="glyphicon glyphicon-user"></span>Jade </a></li>
+        
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown"><span class="glyphicon glyphicon-log-in"></span> Iniciar sesión </a>
+                        <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;"> 
+                            <!-- Login form here -->
+                            <form action="/user/login" method="POST">
+
+                                <input class="input-large" name="username" type="text" id="username" placeholder="Nombre de usuario">
+
+                                <input class="input-large" name="password" type="password" id="password" placeholder="Contraseña">
+
+                                <button type="submit" class="btn btn-primary">Entrar</button>
+                            </form>
+                        </div>
+                    </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header1>	
+	<div class=container id="Filtro">
+		<div id="slider">
+			<div class="elemento">
+				
+				<p class="gancho">¡Come <strong>sano</strong> y al mejor <strong>precio!</strong></p>
+			</div>
+			<div class="elemento">
+				
+				<p class="gancho">¡Encontraras cientos de  <strong>sitios que desconocías!</strong></p>
+			</div>
+			<div class="elemento">
+			
+				<p class="gancho">¡Elige donde comer en<strong> un solo vistazo !</strong></p>
+			</div>
+		</div>
+	</div>
+	
+
+	<section>
+	
+		<div  class="news">
+			<h2>Recomendaciones</h2>
+			<article class="post">
+				<figure><img src="imagenes/tip.jpg" alt=""></figure>
+				<h3>La ventajas de comer productos de temporada</h3>
+				<p>Actualmente, podemos encontrar casi cualquier alimento de cualquier país en cualquier época del año. Entonces, ¿cuáles son las razones por las que tendríamos que seguir el calendario de los productos? Aquí tienes cinco buenos motivos.</p>
+				<video controls class="video-filter" id="video1">
+					<source src="imagenes/video1.mp4" video1/mp4; codecs="avc.h264,avc.42E01E,mp4a.40.2"/>
+				</video>
+			</article>
+
+
+		</div>
+		
+		<article class="menu barato">
+		
+			<figure><img src="imagenes/barPACO.jpg" alt=""></figure>
+			<span class="tipo"> 9.75 €</span>
+
+			<h2>Bar casa Paco  <br/><small>-Alameda Uriquijo 19-</small> </h2>
+				<p>Cocina casera al mejor precio con producto de temporada de lunes a viernes con horario de 12:00 a las 16:00. </p>
+				  
+				<button> <a class="prueba" href="https://www.google.es/maps/place/RESTAURANTE+CASA+PACO/@42.5251433,-2.8482712,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0xcb7dcca67e4ce5b7">Ver mapa  </a></button>
+					
+			<div>
+				<span><strong> Menú del día</strong></span>
+				<ul>
+					<li>Garbanzos</li>
+					<li>Bacalao a la parrilla</li>
+					<li>Pastel de orujo</li>
+					<li>Pan</li>
+					<li>Agua o vino</li>
+				</ul>
+
+			</div>
+		<button > <a href="palo"> Reservar </a></button>
+		</article>
+
+		<article class="menu medio">
+		
+			<figure><img src="imagenes/barjuan.jpg" alt=""></figure>
+			<span class="tipo">15.25 €</span>
+			<h2>Bar Juan II Terraza  <br/><small>~ Alameda Uriquijo 19 ~</small></h2>
+				<p>Cocina casera al mejor precio con producto de temporada de lunes a viernes con horario de 12:00 a las 16:00. Nos encontramos en: </p>
+				<button> <a class="prueba" href="https://www.google.es/maps/place/RESTAURANTE+CASA+PACO/@42.5251433,-2.8482712,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0xcb7dcca67e4ce5b7">Ver mapa  </a></button>
+			<div>
+				<span><strong> Menú del día</strong></span>
+				<ul>
+					<li>Pochas a la marinera con gambas</li>
+					<li>Escalope de ternera al queso</li>
+					<li>Tarta de chocolate</li>
+					<li>Pab</li>
+					<li>Agua o vino</li>
+					
+				</ul>
+			</div>
+
+			<div2>
+				<p1> Calificación <br/><p1>
+
+					<div1 class="ec-stars-wrapper">
+						<a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+						<a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+						<a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+						<a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+						<a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+					</div1>
+			</div2>
+		</article>
+
+		<article class="menu caro">
+		
+			<figure><img src="imagenes/lacuchara.jpg" alt=""></figure>
+			<span class="tipo">25.50 €</span>
+			<h2>Restaurante La cuchara  <br/><small>(Alameda Uriquijo 19)</small></h2>
+				<p>Cocina casera al mejor precio con producto de temporada de lunes a viernes con horario de 12:00 a las 16:00. Nos encontramos en: </p>
+				<button> <a class="prueba" href="https://www.google.es/maps/place/RESTAURANTE+CASA+PACO/@42.5251433,-2.8482712,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0xcb7dcca67e4ce5b7">Ver mapa  </a></button>
+			<div>
+				<span><strong> Menú del día</strong></span>
+				<ul>
+					<li>Garbanzos</li>
+					<li>Bacalao a la parrilla</li>
+					<li>Pastel de orujo</li>
+					<li>Pan</li>
+					<li>Agua o vino</li>
+				</ul>
+			</div>
+			<div2>
+				<p1> Calificación <br/><p1>
+
+					<div1 class="ec-stars-wrapper">
+						<a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+						<a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+						<a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+						<a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+						<a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+					</div1>
+			</div2>
+
+		</article>
+
+		<article class="menu caro">
+		
+			<figure><img src="imagenes/bar5.jpg" alt=""></figure>
+			<span class="tipo">30 €</span>
+			<h2>Bar Calipso  <br/><small>(Alameda Uriquijo 19)</small></h2>
+				<p>Cocina casera al mejor precio con producto de temporada de lunes a viernes con horario de 12:00 a las 16:00. Nos encontramos en: </p>
+				<button> <a class="prueba" href="https://www.google.es/maps/place/RESTAURANTE+CASA+PACO/@42.5251433,-2.8482712,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0xcb7dcca67e4ce5b7">Ver mapa  </a></button>
+			<div>
+				<span><strong> Menú del día</strong></span>
+				<ul>
+					<li>Garbanzos</li>
+					<li>Bacalao a la parrilla</li>
+					<li>Pastel de orujo</li>
+					<li>Pan</li>
+					<li>Agua o vino</li>
+				</ul>
+			</div>
+			<div2>
+				<p1> Calificación <br/><p1>
+
+					<div1 class="ec-stars-wrapper">
+						<a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+						<a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+						<a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+						<a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+						<a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+					</div1>
+			</div2>
+
+		</article>
+
+		<article class="menu barato">
+		
+			<figure><img src="imagenes/bar4.jpg" alt=""></figure>
+			<span class="tipo">5.90€</span>
+			<h2>Fatigas del querer  <br/><small>(Alameda Uriquijo 19)</small></h2>
+				<p>Cocina casera al mejor precio con producto de temporada de lunes a viernes con horario de 12:00 a las 16:00. Nos encontramos en: </p>
+				<button> <a class="prueba" href="https://www.google.es/maps/place/RESTAURANTE+CASA+PACO/@42.5251433,-2.8482712,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0xcb7dcca67e4ce5b7">Ver mapa  </a></button>
+			<div>
+				<span><strong> Menú del día</strong></span>
+				<ul>
+					<li>Garbanzos</li>
+					<li>Bacalao a la parrilla</li>
+					<li>Pastel de orujo</li>
+					<li>Pan</li>
+					<li>Agua o vino</li>
+				</ul>
+			</div>
+			<div2>
+				<p1> Calificación <br/><p1>
+
+					<div1 class="ec-stars-wrapper">
+						<a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+						<a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+						<a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+						<a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+						<a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+					</div1>
+			</div2>
+
+		</article>
+
+		<article class="menu barato">
+		
+			<figure><img src="imagenes/bar3.jpg" alt=""></figure>
+			<span class="tipo">8.75€</span>
+			<h2>Bar Charly  <br/><small>(Alameda Uriquijo 19)</small></h2>
+				<p>Cocina casera al mejor precio con producto de temporada de lunes a viernes con horario de 12:00 a las 16:00. Nos encontramos en: </p>
+				<button> <a class="prueba" href="https://www.google.es/maps/place/RESTAURANTE+CASA+PACO/@42.5251433,-2.8482712,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0xcb7dcca67e4ce5b7">Ver mapa  </a></button>
+			<div>
+				<span><strong> Menú del día</strong></span>
+				<ul>
+				<li>Garbanzos</li>
+					<li>Bacalao a la parrilla</li>
+					<li>Pastel de orujo</li>
+					<li>Pan</li>
+					<li>Agua o vino</li>
+				</ul>
+			</div>
+			<div2>
+				<p1> Calificación <br/><p1>
+
+					<div1 class="ec-stars-wrapper">
+						<a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+						<a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+						<a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+						<a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+						<a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+					</div1>
+			</div2>
+
+		</article>
+
+		<article class="menu medio">
+		
+			<figure><img src="imagenes/bar2.jpg" alt=""></figure>
+			<span class="tipo">17.50</span>
+			<h2>La viña  <br/><small>(Alameda Uriquijo 19)</small></h2>
+				<p>Cocina casera al mejor precio con producto de temporada de lunes a viernes con horario de 12:00 a las 16:00. Nos encontramos en: </p>
+				<button> <a class="prueba" href="https://www.google.es/maps/place/RESTAURANTE+CASA+PACO/@42.5251433,-2.8482712,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0xcb7dcca67e4ce5b7">Ver mapa  </a></button>
+			<div>
+				<span><strong> Menú del día</strong></span>
+				<ul>
+				<li>Garbanzos</li>
+					<li>Bacalao a la parrilla</li>
+					<li>Pastel de orujo</li>
+					<li>Pan</li>
+					<li>Agua o vino</li>
+				</ul>
+			</div>
+			<div2>
+				<p1> Calificación <br/><p1>
+
+					<div1 class="ec-stars-wrapper">
+						<a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+						<a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+						<a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+						<a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+						<a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+					</div1>
+			</div2>
+
+		</article>
+
+		<article class="menu medio">
+		
+			<figure><img src="imagenes/bar1.jpg" alt=""></figure>
+			<span class="tipo">12.75</span>
+			<h2>Natural  <br/><small>(Alameda Uriquijo 19)</small></h2>
+				<p>Cocina casera al mejor precio con producto de temporada de lunes a viernes con horario de 12:00 a las 16:00. Nos encontramos en: </p>
+				<button> <a class="prueba" href="https://www.google.es/maps/place/RESTAURANTE+CASA+PACO/@42.5251433,-2.8482712,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0xcb7dcca67e4ce5b7">Ver mapa  </a></button>
+			<div>
+				<span><strong> Menú del día</strong></span>
+				<ul>
+					<li>Garbanzos</li>
+					<li>Bacalao a la parrilla</li>
+					<li>Pastel de orujo</li>
+					<li>Pan</li>
+					<li>Agua o vino</li>
+				</ul>
+			</div>
+			<div2>
+				<p1> Calificación <br/><p1>
+
+					<div1 class="ec-stars-wrapper">
+						<a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+						<a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+						<a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+						<a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+						<a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+					</div1>
+			</div2>
+		</article>
+		
+	</section>
+
+
+	
+
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js' type='text/javascript'> </script>
+<script type="text/javascript">//<![CDATA[
+		$(function(){
+		    $('#slider div:gt(0)').hide();
+		    setInterval(function(){
+		      $('#slider div:first-child').fadeOut(0)
+		         .next('div').fadeIn(1000)
+		         .end().appendTo('#slider');}, 5000);
+		});
+	//]]></script>
+
+</body>
+</html>
