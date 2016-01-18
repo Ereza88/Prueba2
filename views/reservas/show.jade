@@ -30,7 +30,12 @@ html
                   | Volver a atrás
     section1
       .container
-        h2 Reserva
+        h1 #{reserva.nombre}
+        td
+        h3 #{reserva.apellido} ( #{reserva.comensales} comensales )
+        div(style='white-space:pre;') #{reserva.observaciones}
+        br
+        
     script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js', type='text/javascript')
     script(type='text/javascript').
       //<![CDATA[
@@ -42,7 +47,4 @@ html
       .end().appendTo('#slider');}, 5000);
       });
       //]]>
-  h1 #{reserva.nombre} #{reserva.apellido}#{reserva.comensales}
-  div(style='white-space:pre;') #{reserva.observaciones}
-  br
-  a(href="/reservas") Volver atrás
+  
